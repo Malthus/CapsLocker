@@ -25,8 +25,8 @@ When you run CapsLocker, a small icon appears in the system tray (probably in th
 
 If you right-click on the CapsLocker icon in the system tray, a menu with two options appears:
  
-- The Toggle option switches CapsLocker on or off. If the CapsLocker icon in the system tray is green, CapsLocker is active. If the icon is red, CapsLocker is disabled.
-- The Quit option stops CapsLocker. The icon should disappear from the system tray.
+- The **Toggle** option switches CapsLocker on or off. If the CapsLocker icon in the system tray is green, CapsLocker is active. If the icon is red, CapsLocker is disabled.
+- The **Quit** option stops CapsLocker. The icon should disappear from the system tray.
 
 It is possible to run multiple instances of CapsLocker at the same time. This is not very useful. If you rum multiple instances and you want to use CapsLock, you'll have to turn off all instances individually.
 

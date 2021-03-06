@@ -24,6 +24,7 @@ class CapsLocker(object):
         self.unlockedicon = Image.open("CapsLockerOff.png")
         
         self.keyboard = keyboard.Controller()
+        self.turnoffcapslock()
         self.listener = keyboard.Listener(on_release = self.watchcapslock)
         self.listener.start()
 
@@ -33,9 +34,13 @@ class CapsLocker(object):
 
 
     def watchcapslock(self, key):
-        if self.lock and self.getcapslock() and key == keyboard.Key.caps_lock:
-            self.switchcapslock()
+        if self.lock and key == keyboard.Key.caps_lock:
+            self.turnoffcapslock()
 
+    def turnoffcapslock(self):
+        if self.getcapslock():
+            self.switchcapslock()
+    
     def switchcapslock(self):
         self.keyboard.press(keyboard.Key.caps_lock)
         self.keyboard.release(keyboard.Key.caps_lock)
